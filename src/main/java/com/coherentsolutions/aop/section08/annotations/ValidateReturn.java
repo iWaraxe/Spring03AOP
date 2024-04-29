@@ -1,2 +1,11 @@
-package com.coherentsolutions.aop.section08.annotations;public class ValidateReturn {
+package com.coherentsolutions.aop.section08.annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ValidateReturn {
 }
