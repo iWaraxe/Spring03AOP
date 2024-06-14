@@ -11,7 +11,7 @@ public class CommonPointcuts {
         // Pointcut for all methods in the service layer
     }
 
-    @Pointcut("execution(public * get*(..))")
+    @Pointcut("execution(public * get*())")
     public void getterMethods() {
         // Pointcut for all getter methods
     }

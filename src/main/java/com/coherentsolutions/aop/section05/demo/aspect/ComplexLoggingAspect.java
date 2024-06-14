@@ -13,7 +13,7 @@ public class ComplexLoggingAspect {
     @Pointcut("within(com.coherentsolutions.aop.section05.demo.service..*) || within(com.coherentsolutions.aop.section05.demo.repository..*)")
     private void serviceOrRepositoryLayer() {}
 
-    @Pointcut("execution(* get*(..))")
+    @Pointcut("execution(* get*())")
     private void getterMethods() {}
 
     @Pointcut("serviceOrRepositoryLayer() && !getterMethods()")
